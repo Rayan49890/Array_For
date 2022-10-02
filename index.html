@@ -10,7 +10,7 @@
     <title>Array & For</title>
 </head>
 <body>
-    <label>Average</label>
+    <!-- <label>Average</label>
     <form onsubmit="logTwo(); return false">
         <input type="number" id="input">
         <button type="submit">Do log</button>
@@ -22,7 +22,7 @@
         let result = math.log(input,2);
         document.querySelector("#result").innerHTML = "Average result" + result;
     }
-   </script>
+   </script> -->
 
 
 
@@ -36,19 +36,22 @@
 
 
    <script>
-     let median = []
+     let median = [];
     let mediann = () =>{
-        median.push(input)
-        let input = +document.querySelector("#medianInput").value
+        let input = +document.querySelector("#medianInput").value;
+        median.push(input);
+
         let result = math.median(median);
-        document.querySelector("#result").innerHTML += "result" + result;
-        document.querySelector("#result").innerHTML = "meadin value "  + median;
+
+        document.querySelector("#result").innerHTML = "result" + median;
         document.querySelector("#result").innerHTML += "<br/>" ;
+        document.querySelector("#result").innerHTML += "meadin value "  + result;
         
         document.querySelector("#med").reset();
-       
-
+        
+        
     }
+    console.log('median: ', median);
    </script>
 </body>
 </html>
